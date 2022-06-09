@@ -20,25 +20,11 @@
 	
 	jal MULT2
 	
-	
 	#retorno da func:
-	#add $s6, $v0, $zero
-	#add $a0, $zero, $s6
+	
 	add $a0, $zero, $v0
 	li $v0, 1
-	
 	syscall
-	
-	
-	#add $s7, $zero, $zero #i = 0
-	
-#FOR1 : 
-	#slti $t0, $s7, 10  #i< N?
-	#beq $t0, $zero, SAI1
-	#li $v0, 5
-	#syscall
-	
-#SAI1:
 	
 
 #return 0
@@ -63,8 +49,6 @@ MULT2:
 	lw $a0, -8($sp)
 	lw $a1, -12($sp)
 	lw $s6, -16($sp)
-	
-	
-	
+
 	jr $ra
 	

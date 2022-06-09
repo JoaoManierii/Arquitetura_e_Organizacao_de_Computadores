@@ -44,7 +44,21 @@ syscall
 li $v0, 10
 syscall
 
-#funcao de soma
 MULT:
+sw $s0, 0($sp)
+	sw $s1, -4($sp)
+	sw $a0, -8($sp)
+	sw $a1, -12($sp)
+	sw $s6, -16($sp)
+	addi $sp, $sp, -20
+
 add $s2, $s0, $s1
+
+	addi $sp, $sp, 20
+	lw $s0, 0($sp)
+	lw $s1, -4($sp)
+	lw $a0, -8($sp)
+	lw $a1, -12($sp)
+	lw $s6, -16($sp)
+
 jr $ra
