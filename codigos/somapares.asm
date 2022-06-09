@@ -1,18 +1,18 @@
 #somapares.asm
 
 #DESC: escreva um programa que leia n numeros do 
-#teclado até que o num 0 seja digitado. A seguir 
+#teclado atï¿½ que o num 0 seja digitado. A seguir 
 #acumule todos os numeros pares digitados.
 #
 #DDA 23.05.22
 #
 #int main(void){
-#  //dec de var estáticas
+#  //dec de var estï¿½ticas
 #  int x;
 #  int acc = 0;
 #  int temp;
 #
-#  //laco de 0 a n (n é arbitrário) 
+#  //laco de 0 a n (n ï¿½ arbitrï¿½rio) 
 #  do{
 #    //le o prox num
 #    scanf("%d", &x);

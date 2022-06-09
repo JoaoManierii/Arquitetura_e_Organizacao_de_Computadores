@@ -2,6 +2,7 @@
 .data
 	A: .space 4
 .text
+	#leitura de inteiero
 	li $v0, 5
 	syscall
 	la $t0, A
