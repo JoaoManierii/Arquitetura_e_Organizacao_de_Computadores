@@ -5,13 +5,14 @@
 	
 .text 
 	add $s0, $zero, $zero 
-	
+	addi $t2,$zero, 20 #slt
 	addi	$s3, $zero, 0	
 	addi	$s1, $zero, 1	
 	addi	$s2, $zero, 1	
 	
 FOR1:
-	slti $t1, $s0, 20 
+	slt $t1, $s0, $t2
+	#slti $t1, $s0, 20 
 	beq $t1, $zero, SAI1
 	
 	addi	$v0, $zero, 4
